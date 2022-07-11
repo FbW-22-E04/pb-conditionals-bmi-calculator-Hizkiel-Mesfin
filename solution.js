@@ -8,11 +8,11 @@ const johnMass = 71;
 //Q2 Calculate both their BMIs and store their BMIs in variables.
 
 const markBMI = markMass / markHeight ** 2;
-const johBMI = johnMass / johnHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
 
 //Q3 Create a boolean variable containing information about whether Mark has a higher BMI than John.
 
-const markMoreBeefCake = markBMI > johBMI;
+const markMoreBeefCake = markBMI > johnBMI;
 
 //Q4 Print a string to the console containing the variable from step 3 using string interpolation. (e.g. "Is Mark's BMI higher than John's? Why yes, it's [boolean], it is").
 
@@ -22,8 +22,8 @@ console.log(
 
 //Q5 Create an *if* statement which prints the name and BMI of the person with the highest BMI.
 
-if (markBMI > johBMI) {
+if (markBMI > johnBMI) {
   console.log(`Mark ${markBMI.toFixed(2)}`);
 } else {
-  console.log(`John ${johBMI.toFixed(2)}`);
+  console.log(`John ${johnBMI.toFixed(2)}`);
 }

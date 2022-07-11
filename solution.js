@@ -24,6 +24,6 @@ console.log(
 
 if (markBMI > johnBMI) {
   console.log(`Mark ${markBMI.toFixed(2)}`);
-} else {
+} else if (johnBMI > markBMI) {
   console.log(`John ${johnBMI.toFixed(2)}`);
 }

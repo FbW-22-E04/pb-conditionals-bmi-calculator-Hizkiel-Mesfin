@@ -1,29 +1,18 @@
-//Q1 Store Mark's and John's mass and height in variables.
+function calculateBMI(name, weight, height) {
+  return `${name} has a BMI of ${(weight / height ** 2).toFixed(2)}`;
+}
 
-const markHeight = 1.85;
-const markMass = 90;
-const johnHeight = 1.64;
-const johnMass = 71;
+console.log(calculateBMI("john", 71, 1.64));
 
-//Q2 Calculate both their BMIs and store their BMIs in variables.
+function whiIsBiggest(name1, name2, weight1, weight2, height1, height2) {
+  const BMI1 = weight1 / height1 ** 2;
+  const BMI2 = weight2 / height2 ** 2;
 
-const markBMI = markMass / markHeight ** 2;
-const johnBMI = johnMass / johnHeight ** 2;
+  if (BMI1 > BMI2) {
+    return name1;
+  } else {
+    return name2;
+  }
 
-//Q3 Create a boolean variable containing information about whether Mark has a higher BMI than John.
-
-const markMoreBeefCake = markBMI > johnBMI;
-
-//Q4 Print a string to the console containing the variable from step 3 using string interpolation. (e.g. "Is Mark's BMI higher than John's? Why yes, it's [boolean], it is").
-
-console.log(
-  `Q4: Say true or false. Does mark have a higher BMI than john? And the answer is ${markMoreBeefCake}`
-);
-
-//Q5 Create an *if* statement which prints the name and BMI of the person with the highest BMI.
-
-if (markBMI > johnBMI) {
-  console.log(`Mark ${markBMI.toFixed(2)}`);
-} else if (johnBMI > markBMI) {
-  console.log(`John ${johnBMI.toFixed(2)}`);
+  return BMI1;
 }
